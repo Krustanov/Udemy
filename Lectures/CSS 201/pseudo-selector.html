@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 20px;
+            border: 2px solid blue;
+            color: white;
+        }
+        /*pseudo(advanced) selectors*/
+        .box:not(.dontselectme) {
+            background-color: blue;
+        }
+        .box:hover {
+            background-color: grey;
+        }
+        .box:nth-child(5) {
+            background-color: black;
+            color: yellow;
+        }
+        .box:nth-child(4) {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box dontselectme"></div>
+        <div class="box"></div>
+        <div class="box">SELECT ME</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

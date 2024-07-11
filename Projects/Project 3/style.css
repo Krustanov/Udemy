@@ -1,0 +1,35 @@
+.hero {
+    background-image: url("img/rocket.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+}
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    padding: 50 50 50 50;
+}
+
+.navMenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    justify-content: space-between;
+    align-items: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container {
+    background-image: url("img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    }
